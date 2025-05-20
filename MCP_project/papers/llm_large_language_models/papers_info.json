@@ -1,0 +1,57 @@
+{
+  "2408.15040v2": {
+    "title": "A Survey of Large Language Models for European Languages",
+    "authors": [
+      "Wazir Ali",
+      "Sampo Pyysalo"
+    ],
+    "summary": "Large Language Models (LLMs) have gained significant attention due to their\nhigh performance on a wide range of natural language tasks since the release of\nChatGPT. The LLMs learn to understand and generate language by training\nbillions of model parameters on vast volumes of text data. Despite being a\nrelatively new field, LLM research is rapidly advancing in various directions.\nIn this paper, we present an overview of LLM families, including LLaMA, PaLM,\nGPT, and MoE, and the methods developed to create and enhance LLMs for official\nEuropean Union (EU) languages. We provide a comprehensive summary of common\nmonolingual and multilingual datasets used for pretraining large language\nmodels.",
+    "pdf_url": "http://arxiv.org/pdf/2408.15040v2",
+    "published": "2024-08-27"
+  },
+  "2405.17386v1": {
+    "title": "MindMerger: Efficient Boosting LLM Reasoning in non-English Languages",
+    "authors": [
+      "Zixian Huang",
+      "Wenhao Zhu",
+      "Gong Cheng",
+      "Lei Li",
+      "Fei Yuan"
+    ],
+    "summary": "Reasoning capabilities are crucial for Large Language Models (LLMs), yet a\nnotable gap exists between English and non-English languages. To bridge this\ndisparity, some works fine-tune LLMs to relearn reasoning capabilities in\nnon-English languages, while others replace non-English inputs with an external\nmodel's outputs such as English translation text to circumvent the challenge of\nLLM understanding non-English. Unfortunately, these methods often underutilize\nthe built-in skilled reasoning and useful language understanding capabilities\nof LLMs. In order to better utilize the minds of reasoning and language\nunderstanding in LLMs, we propose a new method, namely MindMerger, which merges\nLLMs with the external language understanding capabilities from multilingual\nmodels to boost the multilingual reasoning performance. Furthermore, a two-step\ntraining scheme is introduced to first train to embeded the external\ncapabilities into LLMs and then train the collaborative utilization of the\nexternal capabilities and the built-in capabilities in LLMs. Experiments on\nthree multilingual reasoning datasets and a language understanding dataset\ndemonstrate that MindMerger consistently outperforms all baselines, especially\nin low-resource languages. Without updating the parameters of LLMs, the average\naccuracy improved by 6.7% and 8.0% across all languages and low-resource\nlanguages on the MGSM dataset, respectively.",
+    "pdf_url": "http://arxiv.org/pdf/2405.17386v1",
+    "published": "2024-05-27"
+  },
+  "2307.10188v1": {
+    "title": "Several categories of Large Language Models (LLMs): A Short Survey",
+    "authors": [
+      "Saurabh Pahune",
+      "Manoj Chandrasekharan"
+    ],
+    "summary": "Large Language Models(LLMs)have become effective tools for natural language\nprocessing and have been used in many different fields. This essay offers a\nsuccinct summary of various LLM subcategories. The survey emphasizes recent\ndevelopments and efforts made for various LLM kinds, including task-based\nfinancial LLMs, multilingual language LLMs, biomedical and clinical LLMs,\nvision language LLMs, and code language models. The survey gives a general\nsummary of the methods, attributes, datasets, transformer models, and\ncomparison metrics applied in each category of LLMs. Furthermore, it highlights\nunresolved problems in the field of developing chatbots and virtual assistants,\nsuch as boosting natural language processing, enhancing chatbot intelligence,\nand resolving moral and legal dilemmas. The purpose of this study is to provide\nreaders, developers, academics, and users interested in LLM-based chatbots and\nvirtual intelligent assistant technologies with useful information and future\ndirections.",
+    "pdf_url": "http://arxiv.org/pdf/2307.10188v1",
+    "published": "2023-07-05"
+  },
+  "2408.03150v1": {
+    "title": "Conditioning LLMs with Emotion in Neural Machine Translation",
+    "authors": [
+      "Charles Brazier",
+      "Jean-Luc Rouas"
+    ],
+    "summary": "Large Language Models (LLMs) have shown remarkable performance in Natural\nLanguage Processing tasks, including Machine Translation (MT). In this work, we\npropose a novel MT pipeline that integrates emotion information extracted from\na Speech Emotion Recognition (SER) model into LLMs to enhance translation\nquality. We first fine-tune five existing LLMs on the Libri-trans dataset and\nselect the most performant model. Subsequently, we augment LLM prompts with\ndifferent dimensional emotions and train the selected LLM under these different\nconfigurations. Our experiments reveal that integrating emotion information,\nespecially arousal, into LLM prompts leads to notable improvements in\ntranslation quality.",
+    "pdf_url": "http://arxiv.org/pdf/2408.03150v1",
+    "published": "2024-08-06"
+  },
+  "2503.04395v1": {
+    "title": "Shaping Shared Languages: Human and Large Language Models' Inductive Biases in Emergent Communication",
+    "authors": [
+      "Tom Kouwenhoven",
+      "Max Peeperkorn",
+      "Roy de Kleijn",
+      "Tessa Verhoef"
+    ],
+    "summary": "Languages are shaped by the inductive biases of their users. Using a\nclassical referential game, we investigate how artificial languages evolve when\noptimised for inductive biases in humans and large language models (LLMs) via\nHuman-Human, LLM-LLM and Human-LLM experiments. We show that referentially\ngrounded vocabularies emerge that enable reliable communication in all\nconditions, even when humans and LLMs collaborate. Comparisons between\nconditions reveal that languages optimised for LLMs subtly differ from those\noptimised for humans. Interestingly, interactions between humans and LLMs\nalleviate these differences and result in vocabularies which are more\nhuman-like than LLM-like. These findings advance our understanding of how\ninductive biases in LLMs play a role in the dynamic nature of human language\nand contribute to maintaining alignment in human and machine communication. In\nparticular, our work underscores the need to think of new methods that include\nhuman interaction in the training processes of LLMs, and shows that using\ncommunicative success as a reward signal can be a fruitful, novel direction.",
+    "pdf_url": "http://arxiv.org/pdf/2503.04395v1",
+    "published": "2025-03-06"
+  }
+}
