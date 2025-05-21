@@ -1,0 +1,25 @@
+{
+  "2505.07005v1": {
+    "title": "Explainable AI the Latest Advancements and New Trends",
+    "authors": [
+      "Bowen Long",
+      "Enjie Liu",
+      "Renxi Qiu",
+      "Yanqing Duan"
+    ],
+    "summary": "In recent years, Artificial Intelligence technology has excelled in various\napplications across all domains and fields. However, the various algorithms in\nneural networks make it difficult to understand the reasons behind decisions.\nFor this reason, trustworthy AI techniques have started gaining popularity. The\nconcept of trustworthiness is cross-disciplinary; it must meet societal\nstandards and principles, and technology is used to fulfill these requirements.\nIn this paper, we first surveyed developments from various countries and\nregions on the ethical elements that make AI algorithms trustworthy; and then\nfocused our survey on the state of the art research into the interpretability\nof AI. We have conducted an intensive survey on technologies and techniques\nused in making AI explainable. Finally, we identified new trends in achieving\nexplainable AI. In particular, we elaborate on the strong link between the\nexplainability of AI and the meta-reasoning of autonomous systems. The concept\nof meta-reasoning is 'reason the reasoning', which coincides with the intention\nand goal of explainable Al. The integration of the approaches could pave the\nway for future interpretable AI systems.",
+    "pdf_url": "http://arxiv.org/pdf/2505.07005v1",
+    "published": "2025-05-11"
+  },
+  "2206.07167v2": {
+    "title": "Understanding Narratives through Dimensions of Analogy",
+    "authors": [
+      "Thiloshon Nagarajah",
+      "Filip Ilievski",
+      "Jay Pujara"
+    ],
+    "summary": "Analogical reasoning is a powerful qualitative reasoning tool that enables\nhumans to connect two situations, and to generalize their knowledge from\nfamiliar to novel situations. Cognitive Science research provides valuable\ninsights into the richness and complexity of analogical reasoning, together\nwith implementations of expressive analogical reasoners with limited\nscalability. Modern scalable AI techniques with the potential to reason by\nanalogy have been only applied to the special case of proportional analogy, and\nnot to understanding higher-order analogies. In this paper, we aim to bridge\nthe gap by: 1) formalizing six dimensions of analogy based on mature insights\nfrom Cognitive Science research, 2) annotating a corpus of fables with each of\nthese dimensions, and 3) defining four tasks with increasing complexity that\nenable scalable evaluation of AI techniques. Experiments with language models\nand neuro-symbolic AI reasoners on these tasks reveal that state-of-the-art\nmethods can be applied to reason by analogy with a limited success, motivating\nthe need for further research towards comprehensive and scalable analogical\nreasoning by AI. We make all our code and data available.",
+    "pdf_url": "http://arxiv.org/pdf/2206.07167v2",
+    "published": "2022-06-14"
+  }
+}

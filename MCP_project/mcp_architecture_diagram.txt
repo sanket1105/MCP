@@ -1,0 +1,99 @@
+```
+                     MODEL CONTEXT PROTOCOL (MCP) ARCHITECTURE
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +------------------------+            +------------------------+            |
+|  |                        |            |                        |            |
+|  |         HOST           |            |         SERVER         |            |
+|  |  (LLM Application)     |            |                        |            |
+|  |                        |            |  - Provides context    |            |
+|  |  +------------------+  |            |  - Offers tools        |            |
+|  |  |                  |  |            |  - Delivers prompts    |            |
+|  |  |      CLIENT      |<--------------->                        |            |
+|  |  |                  |  |  Connection |                        |            |
+|  |  +------------------+  |            +------------------------+            |
+|  |                        |                                                  |
+|  +------------------------+                                                  |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+                           PROTOCOL LAYERS
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +------------------------+            +------------------------+            |
+|  |   PROTOCOL LAYER       |            |   TRANSPORT LAYER      |            |
+|  |                        |            |                        |            |
+|  |  - Message framing     |            |  1. Stdio Transport    |            |
+|  |  - Request/Response    |            |     (Local process)    |            |
+|  |  - Communication       |            |                        |            |
+|  |    patterns            |            |  2. HTTP with SSE      |            |
+|  |                        |            |     (Remote comms)     |            |
+|  |  Classes:              |            |                        |            |
+|  |  - Protocol            |            |  All use JSON-RPC 2.0  |            |
+|  |  - Client              |            |  for message exchange  |            |
+|  |  - Server              |            |                        |            |
+|  +------------------------+            +------------------------+            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+                      MESSAGE TYPES & LIFECYCLE
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +------------------------+            +------------------------+            |
+|  |   MESSAGE TYPES        |            |  CONNECTION LIFECYCLE  |            |
+|  |                        |            |                        |            |
+|  |  1. Requests           |            |  1. Initialization     |            |
+|  |  2. Results            |            |     - initialize req   |            |
+|  |  3. Errors             |            |     - server response  |            |
+|  |  4. Notifications      |            |     - initialized notif|            |
+|  |                        |            |                        |            |
+|  |                        |            |  2. Message Exchange   |            |
+|  |                        |            |     - Request/Response |            |
+|  |                        |            |     - Notifications    |            |
+|  |                        |            |                        |            |
+|  |                        |            |  3. Termination        |            |
+|  |                        |            |     - close()          |            |
+|  |                        |            |     - disconnection    |            |
+|  |                        |            |     - error conditions |            |
+|  +------------------------+            +------------------------+            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+                      BEST PRACTICES & SECURITY
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +------------------------+            +------------------------+            |
+|  |   BEST PRACTICES       |            |  SECURITY              |            |
+|  |                        |            |  CONSIDERATIONS        |            |
+|  |  1. Transport Selection|            |                        |            |
+|  |     - Local: stdio     |            |  1. Transport Security |            |
+|  |     - Remote: SSE      |            |  2. Message Validation |            |
+|  |                        |            |  3. Resource Protection|            |
+|  |  2. Message Handling   |            |  4. Error Handling     |            |
+|  |     - Request process  |            |                        |            |
+|  |     - Progress report  |            |                        |            |
+|  |     - Error management |            |                        |            |
+|  |                        |            |                        |            |
+|  +------------------------+            +------------------------+            |
+|                                                                              |
++------------------------------------------------------------------------------+
+
+                      DEBUGGING & MONITORING
++------------------------------------------------------------------------------+
+|                                                                              |
+|  +------------------------+            +------------------------+            |
+|  |   LOGGING              |            |  DIAGNOSTICS           |            |
+|  |                        |            |  & TESTING             |            |
+|  |  - Protocol events     |            |                        |            |
+|  |  - Message flow        |            |  - Health checks       |            |
+|  |  - Performance         |            |  - Connection state    |            |
+|  |  - Errors              |            |  - Resource usage      |            |
+|  |                        |            |  - Profile performance |            |
+|  |                        |            |  - Transport testing   |            |
+|  |                        |            |  - Error handling      |            |
+|  |                        |            |  - Edge cases          |            |
+|  |                        |            |  - Load testing        |            |
+|  +------------------------+            +------------------------+            |
+|                                                                              |
++------------------------------------------------------------------------------+
+```
